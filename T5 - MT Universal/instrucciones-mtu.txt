@@ -1,0 +1,51 @@
+MTU - Maquina de Turing Universal
+=================================
+
+COMO CORRERLA
+-------------
+
+1. Abrir una terminal en esta carpeta.
+2. Ejecutar:
+
+       python3 mtu.py
+
+3. Pide la cinta de la MTU: pegar una de las de abajo y apretar Enter.
+4. Pregunta "completo (c) o por pasos (p)":
+     c = muestra todos los pasos de una
+     p = avanza un paso cada vez que se aprieta Enter
+
+Se necesita Python 3. No hay que instalar nada mas.
+
+
+EJEMPLOS PARA PROBAR
+--------------------
+
+Ejemplo 1: invertir bits (la maquina del ejercicio 1), con la entrada 1011
+
+    *000101$0001#0000000100#0001000000#0010011001#0100010001#0101010101#0110101000
+
+    Resultado esperado: para en el estado 10 con la cinta 00 01 00 00
+    O sea 0100: los bits de 1011 dados vuelta.
+
+
+Ejemplo 2: la maquina del punto 3 del TP, con la configuracion 1 q0 0 1 1
+
+    01*0101$0000#0000010100#0001010000#0100100000#0101100100
+
+    Resultado esperado: para en el estado 10 con la cinta 01 01 01 01
+    O sea 1111: invirtio el 0 y dejo igual el 1 siguiente.
+
+
+Ejemplo 3: la maquina que acepta cadenas que terminan en 01, con 1101
+
+    *010001$0001#0000010000#0001000100#0100010000#0101100100#1000010000#1001000100#1010111001
+
+    Resultado esperado: para en el estado 11, que es el de aceptacion. ACEPTA.
+
+
+Ejemplo 4: la misma maquina que el ejemplo 3, con 100
+
+    *0000$0001#0000010000#0001000100#0100010000#0101100100#1000010000#1001000100#1010111001
+
+    Resultado esperado: para en el estado 01, que no es el de aceptacion. RECHAZA.
+
